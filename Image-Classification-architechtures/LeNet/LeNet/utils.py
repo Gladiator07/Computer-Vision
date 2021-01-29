@@ -2,17 +2,7 @@ import torch
 from torchvision import datasets, transforms
 from torchvision.datasets.mnist import MNIST
 from torch.utils.data import DataLoader
-# check device
-DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu0'
 
-# PARAMETERS
-RANDOM_SEED = 42
-LEARNING_RATE = 0.001
-BATCH_SIZE = 32
-N_EPOCHS = 15
-
-IMG_SIZE = 32
-N_CLASSES = 10
 
 
 def prepare_data():
